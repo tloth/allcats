@@ -2,12 +2,16 @@ import React from "react";
 import styled from "styled-components";
 
 import TakeHomeButton from "./TakeHomeButton";
+import { ReactComponent as Best } from "./Allcats_badge.svg";
 
-export default function SingleCat({ name, description, image }) {
+export default function SingleCat({ name, description, image, best }) {
   return (
     <Article>
       <Container>
-        <Img src={image} alt={name}></Img>
+        <div>
+          {best ? <BestBadge /> : null}
+          <Img src={image} alt={name}></Img>
+        </div>
         <h2>{name}</h2>
         <p>{description}</p>
       </Container>
@@ -31,6 +35,12 @@ const Article = styled.article`
 
 const Container = styled.div`
   padding: 1rem;
+`;
+
+const BestBadge = styled(Best)`
+  position: absolute;
+  margin: 1rem;
+  z-index: 666;
 `;
 
 const Img = styled.img`
