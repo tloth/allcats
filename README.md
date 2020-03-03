@@ -28,5 +28,6 @@ I spent approximately 4 hours on the challenge (with a lunch & a cinema break).
 - 'Take me home' buttons should explode in a heart, currently they do not do anything
 - polish the design! (there are still spacing issues here and there)
 - revisit the cat tiles and figure out a better way of sizing them (right now the list width and the images are set in pixels which is not the most accessible)
+- add a loading state (there are really nice easy-to-use libraries with simple designs, I have used react-content-loader before which was a delight)
 
 Thank you for checking out my AllCats :sparkles:
