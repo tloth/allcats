@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 
-import logo from "./Allcats_badge.svg";
-import "./App.css";
 import Navigation from "./Navigation";
 import SingleCat from "./SingleCat";
+import NoCatsError from "./NoCatsError";
 
 function App() {
   const [cats, setCats] = useState(null);
@@ -16,10 +15,7 @@ function App() {
       .catch(err => console.log({ err }));
   }, []);
 
-  console.log({ cats });
-
   return (
-    // <div className="App">
     <>
       <Navigation />
       <H1>Choose cats</H1>
@@ -48,9 +44,10 @@ function App() {
             }
           })}
         </CatList>
-      ) : null}
+      ) : (
+        <NoCatsError />
+      )}
     </>
-    // </div>
   );
 }
 
