@@ -7,14 +7,14 @@ export default function TakeHomeButton() {
 
 const Button = styled.button`
   color: #fff;
-  background: #2ea372;
   text-transform: uppercase;
   font-family: inherit;
   font-size: 100%;
   font-weight: 700;
   letter-spacing: 0.1rem;
-  padding: 0.8rem;
+  background: #2ea372;
   border: none;
+  padding: 0.8rem;
   cursor: pointer;
   margin: 1rem;
   &: hover {

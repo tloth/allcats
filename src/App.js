@@ -5,7 +5,7 @@ import Navigation from "./Navigation";
 import SingleCat from "./SingleCat";
 import NoCatsError from "./NoCatsError";
 
-function App() {
+const App = () => {
   const [cats, setCats] = useState(null);
 
   useEffect(() => {
@@ -49,7 +49,7 @@ function App() {
       )}
     </>
   );
-}
+};
 
 const H1 = styled.h1`
   text-align: center;
@@ -58,9 +58,9 @@ const H1 = styled.h1`
 const CatList = styled.ul`
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
-  padding: 0;
   max-width: 1200px;
+  margin: 0 auto 10rem;
+  padding: 0;
 `;
 
 export default App;

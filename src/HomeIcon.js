@@ -44,8 +44,6 @@ export default function HomeIcon() {
 
 const Svg = styled.svg`
   &:hover {
-    * {
-      opacity: 0.9;
-    }
+    opacity: 0.7;
   }
 `;

@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
 
 import HomeIcon from "./HomeIcon";
 
-export default function Navigation() {
+const Navigation = () => {
   return (
     <Nav>
       <P>
@@ -40,13 +40,13 @@ export default function Navigation() {
       </div>
     </Nav>
   );
-}
+};
 
 const Nav = styled.nav`
-  background: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: #fff;
   padding: 0 2rem;
 `;
 
@@ -65,3 +65,5 @@ const A = styled.a`
     color: #2ea372;
   }
 `;
+
+export default Navigation;
