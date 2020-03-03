@@ -10,9 +10,9 @@ You can see the site live at https://annas-allcats.netlify.com/ :cat:
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-In the project directory, run:
-_`yarn start` or `npm start`_
-Runs the app in the development mode.<br />
+After cloning the repo, in the project directory, run `npm i` to install dependencies.
+Then run _`yarn start` or `npm start`_
+to run the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
